@@ -1,0 +1,23 @@
+typedef <type> <new_name>
+
+
+typedef int number;
+
+number x = 42;
+
+
+typedef struct node *List;
+
+type === struct node *
+new_name === List
+
+void add(List l, int v) {
+	
+}
+
+
+main {
+	l = NULL;
+	add(l, 2);
+	????
+}
