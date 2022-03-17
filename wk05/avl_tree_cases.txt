@@ -1,0 +1,7 @@
+Case 1: LL = rotate right
+
+Case 2: LR = rotate the left subtree left, then rotate right
+
+Case 3: RR = rotate left
+
+Case 4: RL = rotate the right subtree right, then rotate left
