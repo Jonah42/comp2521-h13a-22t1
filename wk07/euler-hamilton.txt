@@ -1,0 +1,4 @@
+Euler Paths: cover every single edge once and only once
+Euler Tour: euler path, start and finish at the same vertex
+Hamilton Paths: cover every single node once and only once
+Hamilton tours: hamilton path, start and finish at the same vertex
