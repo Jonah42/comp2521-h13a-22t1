@@ -1,0 +1,54 @@
+"password123" -> 3247af590baf467c
+
+"hamburger" 2
+"soft serve" 1
+
+price["hamburger"] = 2
+
+hash("hamburger")  = sum(chars in string) = 'h' + 'a' + .... = 633
+
+price[633] = 2
+
+10 items on the menu
+
+633 % 10 = 3
+
+price[3] = 2
+
+hash(string) = sum(chars in the string) % 10
+
+hash("soft serve") = 0
+
+[1, _,_, 2,_,_,...]
+
+introduce the "mahburger" price of 12
+
+hash("mahburger") = 3
+
+Collision resolution:
+1. Separate Chaining
+	[<"soft serve" 1>, _,_,<"hamburger" 2>,_,_,...]
+			 					|
+			 					v
+			 				<"mahburger" 12>
+
+2. Linear Probing
+	[<"soft serve" 1>, _,_,<"hamburger" 2>,<"mahburger" 12>,_,...]
+
+3. Double Hashing
+	[<"soft serve" 1>, _,_,<"hamburger" 2>,_,_,_, <"mahburger" 12>...]
+	h1 = 3
+	h2 = 4
+	3+4 = 7
+
+	introduce the "bhamurger"
+	h1 = 3
+	h2 = 4
+	3 + 4 = 7
+	7 + 4 = 11 % 10 = 1
+
+insert(42)
+insert(7)
+query(8) false
+
+{_,42, _, _, 7, _, _}
